@@ -4,9 +4,16 @@ import { View, Text, Image, TouchableOpacity, Share } from "react-native";
 import styles from "./EventCard.style";
 import moment from "moment";
 import { FontAwesome } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const EventCard = ({ event, onVenuePress }) => {
   const [liked, setLiked] = useState(false);
+  const navigation = useNavigation();
+
+  const handleEventPress = () => {
+    // EventDetay sayfasına yönlendir
+    navigation.navigate("EventDetail", { event }); // event'i Detay sayfasına iletiyoruz
+  };
 
   const toggleLike = () => {
     setLiked((prevLiked) => !prevLiked);
@@ -35,7 +42,10 @@ const EventCard = ({ event, onVenuePress }) => {
 
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={imageSource} />
+      <TouchableOpacity onPress={handleEventPress}>
+        <Image style={styles.image} source={imageSource} />
+      </TouchableOpacity>
+
       <View style={styles.inner_container}>
         <View style={styles.dateContainer}>
           <Text style={styles.startDate}>{startDate}</Text>
@@ -43,7 +53,9 @@ const EventCard = ({ event, onVenuePress }) => {
           <Text style={styles.endDate}>{endDate}</Text>
         </View>
         <View>
-          <Text style={styles.eventName}>{event.Adi}</Text>
+          <TouchableOpacity onPress={handleEventPress}>
+            <Text style={styles.eventName}>{event.Adi}</Text>
+          </TouchableOpacity>
         </View>
         <View style={styles.actionsContainer}>
           <View style={styles.location_container}>

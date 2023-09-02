@@ -6,24 +6,45 @@ import { View, StyleSheet, FlatList } from "react-native";
 import SearchBar from "../src/SearchBar/SearchBar";
 import event_data from "../event_data.json";
 import EventCard from "../src/EventCard/EventCard";
+import moment from "moment";
+
 
 const SearchScreen = () => {
+  const [list, setlist] = useState(event_data.filter(x => moment(x.EtkinlikBaslamaTarihi).isSameOrAfter(moment())));
+  const [filteredlist, setfilteredlist] = useState(event_data);
+
   const renderEvent = ({ item }) => (
     <EventCard event={item} onVenuePress={handleVenuePress} />
   );
-  const [list, setlist] = useState(event_data);
-  const [filteredlist, setfilteredlist] = useState(event_data);
 
   useFocusEffect(
     React.useCallback(() => {
-    
       setfilteredlist(list);
+      
     }, [])
   );
 
+  // useEffect(() => {
+  //   setfilteredlist(list);
+  
+  // }, [list]);
+
+  useEffect(() => {
+    // Şu anki tarih ve saat
+    const currentDate = moment();
+
+    // Etkinlikleri güncel tarih ve saate göre filtrele
+    const filteredEvents = event_data.filter((event) =>
+      moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(currentDate)
+    );
+
+    setfilteredlist(filteredEvents);
+  
+  }, []);
+
   const handleVenuePress = (venueName) => {
     const vanueFilteredlist = event_data.filter(
-      (event) => event.Mekan === venueName
+      (event) => event.Mekan === venueName && moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
     );
     setfilteredlist(vanueFilteredlist);
   };

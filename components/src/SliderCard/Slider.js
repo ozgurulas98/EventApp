@@ -28,7 +28,7 @@ const Slider = () => {
   const defaultImageURL =
     "https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg?w=900";
 
-  const slides = event_data.map((event) => ({
+    const slides = event_data.slice(0, 5).map((event) => ({
     image: event.KucukAfis || defaultImageURL,
     text: event.Adi,
     etkinlikBaslamaTarihi: event.EtkinlikBaslamaTarihi,

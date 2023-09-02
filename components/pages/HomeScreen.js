@@ -5,34 +5,35 @@ import { useState, useEffect, useCallback } from "react";
 import Slider from "../src/SliderCard/Slider";
 import EventCard from "../src/EventCard/EventCard";
 import event_data from "../event_data.json";
+import moment from "moment";
 
 const HomeScreen = () => {
-  /*
+  
   const [list, setlist] = useState(event_data);
   const [filteredlist, setfilteredlist] = useState(event_data);
-  */
+  
   const renderEvent = ({ item }) => (
-    <EventCard event={item} /*onVenuePress={handleVenuePress} */ />
+    <EventCard event={item} />
   );
-  /*
-  useFocusEffect(
-    React.useCallback(() => {
-      setfilteredlist(list);
-    }, [])
-  );
-
-  const handleVenuePress = (venueName) => {
-    const vanueFilteredlist = event_data.filter(
-      (event) => event.Mekan === venueName
+  useEffect(() => {
+    // Şu anki tarih ve saat
+    const currentDate = moment();
+    
+    // Etkinlikleri güncel tarih ve saate göre filtrele
+    const filteredEvents = event_data.filter((event) =>
+      moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(currentDate)
     );
-    setfilteredlist(vanueFilteredlist);
-  }; */
+
+    setfilteredlist(filteredEvents);
+    
+  }, []);
+ 
   return (
     <View style={styles.container}>
       <FlatList
         ListHeaderComponent={<Slider />}
         keyExtractor={(item) => item.Id.toString()}
-        data={event_data}
+        data={filteredlist}
         renderItem={renderEvent}
       />
     </View>
