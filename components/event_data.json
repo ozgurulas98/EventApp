@@ -3,7 +3,7 @@
     "Tur": "KONSER",
     "Id": 4546,
     "Adi": "Cem Adrian",
-    "EtkinlikBitisTarihi": "2022-11-03T21:00:00",
+    "EtkinlikBitisTarihi": "2024-11-03T21:00:00",
     "KucukAfis": "https://resimdiyari.com/upload/2014/04/28/20140428215952-84b551c2.jpg",
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "Duygusal şarkılarıyla ruhumuza dokunan, hislerimize tercüman olan Cem Adrian sevenleriyle hız kesmeden buluşmaya devam ediyor.",
@@ -19,7 +19,7 @@
     "Tur": "KONSER",
     "Id": 4554,
     "Adi": "Sena Şener",
-    "EtkinlikBitisTarihi": "2022-10-03T21:00:00",
+    "EtkinlikBitisTarihi": "2024-10-03T21:00:00",
     "KucukAfis": "https://cdn.bubilet.com.tr/files/Etkinlik/sena-sener-konseri-92463.jpg",
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "19 Eylül 1998 yılında Gaziantep'te dünyaya gelen sevilen isim Sena Şener, güçlü sesiyle dinleyenleriyle buluşuyor. 'Bak Bana', 'Ölsem', 'Sevmemeliyiz' gibi şarkılarla bilinen yetenekli genç sanatçıyla, unutulmaz bir gece sizi bekliyor. ",
@@ -29,7 +29,11 @@
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2022-10-03T19:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Harbiye Cemil Topuzlu"
+    "Mekan": "Harbiye Cemil Topuzlu",
+    "SliderPhotos": [
+      "https://www.biyografi.biz/wp-content/uploads/2020/06/sena-sener.jpg",
+      "https://iasbh.tmgrup.com.tr/e81732/650/344/0/28/749/422?u=https://isbh.tmgrup.com.tr/sbh/2022/05/14/bu-yaz-tum-dunyada-sena-senerin-sesi-yankilanacak-1652481515681.jpeg"
+    ]
   },
   {
     "Tur": "KONSER",
@@ -45,7 +49,11 @@
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2023-11-09T19:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Dorock XL Venue"
+    "Mekan": "Dorock XL Venue",
+    "SliderPhotos": [
+      "https://www.kitaptansanattan.com/wp-content/uploads/2020/10/Mabel-Matiz-780x470.jpg",
+      "https://media.bantmag.com/wp-content/uploads/2022/01/mabel-matiz-1.jpeg"
+    ]
   },
   {
     "Tur": "KONSER",
