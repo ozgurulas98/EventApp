@@ -1,8 +1,8 @@
 // DetailSlider.js
 import React, { useState } from 'react';
-import { View, ScrollView, Dimensions } from 'react-native';
+import { View, ScrollView, Dimensions,Image } from 'react-native';
 
-const DetailSlider = ({ slides }) => {
+const DetailSlider = ({ event }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const screenWidth = Dimensions.get('window').width;
 
@@ -20,9 +20,9 @@ const DetailSlider = ({ slides }) => {
         onScroll={handleScroll}
         showsHorizontalScrollIndicator={false}
       >
-        {slides.map((slide, index) => (
-          <View key={index} style={{ width: screenWidth, flex: 1 }}>
-            {slide}
+        {event.SliderPhotos.map((slide, index) => (
+          <View key={index} style={{ width: screenWidth, flex: 1, height:260}}>
+            <Image source={{ uri: slide }} style={{width: screenWidth, height: 260, flex:1}} />
           </View>
         ))}
       </ScrollView>

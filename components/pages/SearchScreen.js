@@ -8,9 +8,12 @@ import event_data from "../event_data.json";
 import EventCard from "../src/EventCard/EventCard";
 import moment from "moment";
 
-
 const SearchScreen = () => {
-  const [list, setlist] = useState(event_data.filter(x => moment(x.EtkinlikBaslamaTarihi).isSameOrAfter(moment())));
+  const [list, setlist] = useState(
+    event_data.filter((x) =>
+      moment(x.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
+    )
+  );
   const [filteredlist, setfilteredlist] = useState(event_data);
 
   const renderEvent = ({ item }) => (
@@ -20,14 +23,8 @@ const SearchScreen = () => {
   useFocusEffect(
     React.useCallback(() => {
       setfilteredlist(list);
-      
     }, [])
   );
-
-  // useEffect(() => {
-  //   setfilteredlist(list);
-  
-  // }, [list]);
 
   useEffect(() => {
     // Şu anki tarih ve saat
@@ -39,12 +36,13 @@ const SearchScreen = () => {
     );
 
     setfilteredlist(filteredEvents);
-  
   }, []);
 
   const handleVenuePress = (venueName) => {
     const vanueFilteredlist = event_data.filter(
-      (event) => event.Mekan === venueName && moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
+      (event) =>
+        event.Mekan === venueName &&
+        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
     );
     setfilteredlist(vanueFilteredlist);
   };

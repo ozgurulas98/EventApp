@@ -67,4 +67,13 @@ export default StyleSheet.create({
   mapo_icon: {
     marginHorizontal: 3,
   },
+  isfree:{
+    fontWeight: "bold",
+    fontSize: 13,
+    color: "red",
+    paddingLeft:10,
+    marginLeft: "auto"
+   
+
+  }
 });

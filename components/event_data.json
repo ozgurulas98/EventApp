@@ -3,7 +3,7 @@
     "Tur": "KONSER",
     "Id": 4546,
     "Adi": "Cem Adrian",
-    "EtkinlikBitisTarihi": "2024-11-03T21:00:00",
+    "EtkinlikBitisTarihi": "2022-11-03T21:00:00",
     "KucukAfis": "https://resimdiyari.com/upload/2014/04/28/20140428215952-84b551c2.jpg",
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "Duygusal şarkılarıyla ruhumuza dokunan, hislerimize tercüman olan Cem Adrian sevenleriyle hız kesmeden buluşmaya devam ediyor.",
@@ -13,13 +13,24 @@
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2022-11-03T19:00:00",
     "Lokasyon": "İzmir",
-    "Mekan": "Cumhuriyet Meydanı"
+    "Mekan": "Cumhuriyet Meydanı",
+    "SliderPhotos": [
+      "https://resimdiyari.com/upload/2014/04/28/20140428215952-84b551c2.jpg",
+      "https://resimdiyari.com/upload/2014/04/28/20140428215952-84b551c2.jpg"
+    ],
+    "Location": {
+      "latitude": 39.919251545869436,
+      "longitude": 32.859696405948036
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "KONSER",
     "Id": 4554,
     "Adi": "Sena Şener",
-    "EtkinlikBitisTarihi": "2024-10-03T21:00:00",
+    "EtkinlikBitisTarihi": "2022-10-03T21:00:00",
     "KucukAfis": "https://cdn.bubilet.com.tr/files/Etkinlik/sena-sener-konseri-92463.jpg",
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "19 Eylül 1998 yılında Gaziantep'te dünyaya gelen sevilen isim Sena Şener, güçlü sesiyle dinleyenleriyle buluşuyor. 'Bak Bana', 'Ölsem', 'Sevmemeliyiz' gibi şarkılarla bilinen yetenekli genç sanatçıyla, unutulmaz bir gece sizi bekliyor. ",
@@ -33,6 +44,14 @@
     "SliderPhotos": [
       "https://www.biyografi.biz/wp-content/uploads/2020/06/sena-sener.jpg",
       "https://iasbh.tmgrup.com.tr/e81732/650/344/0/28/749/422?u=https://isbh.tmgrup.com.tr/sbh/2022/05/14/bu-yaz-tum-dunyada-sena-senerin-sesi-yankilanacak-1652481515681.jpeg"
+    ],
+    "Location": {
+      "latitude": 41.04618254364907,
+      "longitude": 28.989804790891384
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
     ]
   },
   {
@@ -53,6 +72,14 @@
     "SliderPhotos": [
       "https://www.kitaptansanattan.com/wp-content/uploads/2020/10/Mabel-Matiz-780x470.jpg",
       "https://media.bantmag.com/wp-content/uploads/2022/01/mabel-matiz-1.jpeg"
+    ],
+    "Location": {
+      "latitude": 41.04618254364907,
+      "longitude": 28.989804790891384
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
     ]
   },
   {
@@ -64,12 +91,23 @@
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "2005 yılında çıkardığı ‘Büyük İnsan’ şarkısıyla ismini geniş kitlelere duyurmayı başaran Gökhan Türkmen, ardından çıkardığı ‘Çatı Katı’, ‘Dön’, ‘Bir Öykü’ ve ‘Bitmesin’ şarkılarıyla ismini müzik dünyasına adını yazdırdı. 2005 yılında amatör olarak seslendirdiği Büyük İnsan adlı parçası ile video paylaşım sitesi Youtube'da beş milyondan fazla dinlenen Gökhan Türkmen, dinleyicisiyle buluşmaya devam ediyor.",
     "BiletSatisLinki": null,
-    "UcretsizMi": true,
+    "UcretsizMi": false,
     "Resim": "https://cdn.bubilet.com.tr/files/Etkinlik/gokhan-turkmen-konseri-28498.png",
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2023-11-03T19:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Dorock XL Venue"
+    "Mekan": "Dorock XL Venue",
+    "SliderPhotos": [
+      "https://cdn.bubilet.com.tr/files/Etkinlik/gokhan-turkmen-konseri-28498.png"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -80,12 +118,23 @@
     "EtkinlikMerkezi": "Gaziemir Belediyesi Atatürk Kültür Merkezi",
     "KisaAciklama": "Lozan Antlaşması`nın 100. yılını İzmir Büyükşehir Belediyesi prodüksiyonu olan tiyatro oyunu ile karşılıyoruz. \r<br>Oyun;22 Ağustos 2023 tarihinde Saat 21.00'da Ödemiş Belediyesi Kültür Merkezi'nde.\r<br>26 Ağustos 2023 tarihinde Saat 21.00'da Gaziemir Belediyesi Atatürk Kültür Merkezi'nde.\r<br>31 Ağustos 2023 tarihinde Saat 21.00'da İsmet İnönü Sanat Merkezi'nde.\r<br>",
     "BiletSatisLinki": null,
-    "UcretsizMi": true,
+    "UcretsizMi": false,
     "Resim": "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230811_151132_etkinlik.jpg",
     "EtkinlikUrl": "lozan-5191",
     "EtkinlikBaslamaTarihi": "2023-09-09T21:00:00",
     "Lokasyon": "Ankara",
-    "Mekan": "Ankara Devlet Tiyatrosu"
+    "Mekan": "Ankara Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Thumb/20230811_151148_ic.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "KONSER",
@@ -101,7 +150,17 @@
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2023-11-11T19:00:00",
     "Lokasyon": "İzmir",
-    "Mekan": "Kültür Park"
+    "Mekan": "Kültür Park",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Thumb/20230823_170426_ic.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "KONSER",
@@ -112,12 +171,24 @@
     "EtkinlikMerkezi": "İlçelerde Etkinlik Alanları",
     "KisaAciklama": "Duman, Atlantis Yapım organizasyonu ile 3 Eylül Pazar akşamı Harbiye Açıkhava’da!",
     "BiletSatisLinki": null,
-    "UcretsizMi": true,
+    "UcretsizMi": false,
     "Resim": "https://cdn.bubilet.com.tr/files/Etkinlik/duman-konseri--82249.png",
     "EtkinlikUrl": "evrim-ozkaynak",
     "EtkinlikBaslamaTarihi": "2023-11-03T19:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Harbiye Cemil Topuzlu"
+    "Mekan": "Harbiye Cemil Topuzlu",
+    "SliderPhotos": [
+      "https://cdn.bubilet.com.tr/files/Etkinlik/duman-konseri--82249.png",
+      "https://cdn.bubilet.com.tr/files/Etkinlik/duman-konseri--82249.png"
+    ],
+    "Location": {
+      "latitude": 41.04618254364907,
+      "longitude": 28.989804790891384
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "SİNEMA",
@@ -133,7 +204,17 @@
     "EtkinlikUrl": "turna-misali-gezici-acikhava-film-gunleri",
     "EtkinlikBaslamaTarihi": "2023-09-11T21:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Rexx "
+    "Mekan": "Rexx ",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Thumb/20230808_154255_ic.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "KONSER",
@@ -144,12 +225,23 @@
     "EtkinlikMerkezi": "Ahmed Adnan Saygun Sanat Merkezi",
     "KisaAciklama": "Semicenk, Türk pop müziği sanatçısıdır. Küçük yaşlarda müziğe ilgisi olan Semicenk,aslen Orduludur. 2019 yılında O Ses Türkiye yarışmasına katılmıştır. Sesi ve sahnedeki başarılı performansı ile yarı finale yükselmiştir.",
     "BiletSatisLinki": null,
-    "UcretsizMi": false,
+    "UcretsizMi": true,
     "Resim": "https://cdn.bubilet.com.tr/files/Sanatci/semicenk--26219.jpeg",
     "EtkinlikUrl": "zeytin-altinda-buyulu-flutler",
     "EtkinlikBaslamaTarihi": "2023-10-29T21:00:00",
     "Lokasyon": "İzmir",
-    "Mekan": "Cumhuriyet Meydanı"
+    "Mekan": "Cumhuriyet Meydanı",
+    "SliderPhotos": [
+      "https://cdn.bubilet.com.tr/files/Sanatci/semicenk--26219.jpeg",
+      "https://cdn.bubilet.com.tr/files/Sanatci/semicenk--26219.jpeg"
+    ],
+    "Location": {
+      "latitude": 39.919251545869436,
+      "longitude": 32.859696405948036
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SİNEMA",
@@ -165,7 +257,17 @@
     "EtkinlikUrl": "yeniden-sinematek-cennetten-gelen-cocukcairo-conspiracy",
     "EtkinlikBaslamaTarihi": "2024-08-30T21:00:00",
     "Lokasyon": "Ankara",
-    "Mekan": "Atlantis Sinema Salonu"
+    "Mekan": "Atlantis Sinema Salonu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230623_161434_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -181,7 +283,18 @@
     "EtkinlikUrl": "lozan-5191",
     "EtkinlikBaslamaTarihi": "2023-08-31T21:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Pera Sahne"
+    "Mekan": "Pera Sahne",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Thumb/20230811_151148_ic.jpg",
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Thumb/20230811_151148_ic.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -197,7 +310,17 @@
     "EtkinlikUrl": "ogretmenler-grubu-karma-resim-segisi",
     "EtkinlikBaslamaTarihi": "2025-08-08T08:00:00",
     "Lokasyon": "Ankara",
-    "Mekan": "Medya Sanat Galerisi "
+    "Mekan": "Medya Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230728_143335_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -213,7 +336,17 @@
     "EtkinlikUrl": "camda-antik-izmir-koleksiyon-sergisi",
     "EtkinlikBaslamaTarihi": "2024-07-14T09:30:00",
     "Lokasyon": "İzmir",
-    "Mekan": "İzmir Sanat Galerisi"
+    "Mekan": "İzmir Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230711_170102_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -229,7 +362,18 @@
     "EtkinlikUrl": "92-ief-izmir-askina-6780",
     "EtkinlikBaslamaTarihi": "2023-09-22T21:00:00",
     "Lokasyon": "İzmir",
-    "Mekan": "İzmir Devlet Tiyatrosu"
+    "Mekan": "İzmir Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230825_152859_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -245,7 +389,18 @@
     "EtkinlikUrl": "92-iefafarabir-arabesk-muzikali-3522",
     "EtkinlikBaslamaTarihi": "2023-09-10T21:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "İstanbul Devlet Tiyatrosu"
+    "Mekan": "İstanbul Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230825_164852_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -261,7 +416,18 @@
     "EtkinlikUrl": "izbbst-mor-salvar-3185",
     "EtkinlikBaslamaTarihi": "2023-09-04T19:30:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "İstanbul Devlet Tiyatrosu"
+    "Mekan": "İstanbul Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20220321_103216_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -277,7 +443,18 @@
     "EtkinlikUrl": "92-ief-sunay-akinnihat-sirdarsivrisinek-dedin-de-aklima-geldi",
     "EtkinlikBaslamaTarihi": "2023-09-04T21:00:00",
     "Lokasyon": "Ankara",
-    "Mekan": "Ankara Route Sahnesi"
+    "Mekan": "Ankara Route Sahnesi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230825_165329_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -293,7 +470,18 @@
     "EtkinlikUrl": "92-ief-kaan-sekbanilerler-temiz-8129",
     "EtkinlikBaslamaTarihi": "2023-09-05T21:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Pera Sahne"
+    "Mekan": "Pera Sahne",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230825_165708_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -309,7 +497,18 @@
     "EtkinlikUrl": "3-nal-1-at",
     "EtkinlikBaslamaTarihi": "2023-09-06T19:30:00",
     "Lokasyon": "İzmir",
-    "Mekan": "İzmir Devlet Tiyatrosu"
+    "Mekan": "İzmir Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230303_142942_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "SİNEMA",
@@ -325,7 +524,18 @@
     "EtkinlikUrl": "yeniden-sinemateksuc-bendemon-crime",
     "EtkinlikBaslamaTarihi": "2023-09-06T21:00:00",
     "Lokasyon": "Bursa",
-    "Mekan": "Bursa Sinema Salonu"
+    "Mekan": "Bursa Sinema Salonu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230623_161737_etkinlik.jpg",
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230623_161737_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "TİYATRO",
@@ -341,7 +551,18 @@
     "EtkinlikUrl": "izbbst-benim-naciz-vucudum-2902",
     "EtkinlikBaslamaTarihi": "2023-09-09T19:30:00",
     "Lokasyon": "Bursa",
-    "Mekan": "Bursa Devlet Tiyatrosu"
+    "Mekan": "Bursa Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20221222_134830_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -357,7 +578,17 @@
     "EtkinlikUrl": "monitor-sergisi",
     "EtkinlikBaslamaTarihi": "2023-08-19T08:30:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "İstanbul Sanat Galerisi"
+    "Mekan": "İstanbul Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230814_151940_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "KONSER",
@@ -373,7 +604,18 @@
     "EtkinlikUrl": "ahmed-adnan-saygun-senfoni-orkestrasi-konseri-581",
     "EtkinlikBaslamaTarihi": "2023-09-11T20:00:00",
     "Lokasyon": "Bursa",
-    "Mekan": "Bursaspor Stadyum"
+    "Mekan": "Bursaspor Stadyum",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230824_111456_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -389,7 +631,17 @@
     "EtkinlikUrl": "sinema-benim-askim-turkan-soray-kostum-ve-afis-sergisi",
     "EtkinlikBaslamaTarihi": "2023-08-16T09:30:00",
     "Lokasyon": "Bursa",
-    "Mekan": "Bursa Sanat Galerisi"
+    "Mekan": "Bursa Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230814_143640_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -405,7 +657,17 @@
     "EtkinlikUrl": "irfan-ertel-resim-sergisi",
     "EtkinlikBaslamaTarihi": "2023-08-25T09:30:00",
     "Lokasyon": "Ankara",
-    "Mekan": "Ankara Sanat Galerisi"
+    "Mekan": "Ankara Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230807_093402_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -421,7 +683,17 @@
     "EtkinlikUrl": "cuneyt-gurbulak-parmagimin-ucundaki-hayallerim-sergisi",
     "EtkinlikBaslamaTarihi": "2023-09-07T18:00:00",
     "Lokasyon": "İzmir",
-    "Mekan": "Ankara Devlet Tiyatrosu"
+    "Mekan": "Ankara Devlet Tiyatrosu",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230823_164628_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "SERGİ",
@@ -437,7 +709,17 @@
     "EtkinlikUrl": "munir-yucelresim-sergisi",
     "EtkinlikBaslamaTarihi": "2023-09-05T18:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "İstanbul Sanat Galerisi"
+    "Mekan": "İstanbul Sanat Galerisi",
+    "SliderPhotos": [
+      "https://kultursanat.izmir.bel.tr/YuklenenDosyalar/Etkinlikler/Kucuk/20230823_165734_etkinlik.jpg"
+    ],
+    "Location": {
+      "latitude": 41.03591045651899,
+      "longitude": 28.982889532832765
+    },
+    "TicketPriceCategory":[
+      { "label": "UCRETSİZ", "value": 0 } 
+    ]
   },
   {
     "Tur": "KONSER",
@@ -453,6 +735,18 @@
     "EtkinlikUrl": "zeytin-altinda-buyulu-flutler",
     "EtkinlikBaslamaTarihi": "2023-11-29T21:00:00",
     "Lokasyon": "İstanbul",
-    "Mekan": "Harbiye Cemil Topuzlu"
+    "Mekan": "Harbiye Cemil Topuzlu",
+    "SliderPhotos": [
+      "https://cdn.bubilet.com.tr/files/Etkinlik/emircan-igrek-konseri-72338.jpeg",
+      "https://cdn.bubilet.com.tr/files/Etkinlik/emircan-igrek-konseri-72338.jpeg"
+    ],
+    "Location": {
+      "latitude": 41.04618254364907,
+      "longitude": 28.989804790891384
+    },
+    "TicketPriceCategory":[
+      { "label": "Vip 200 TL", "value": 200 },
+      { "label": "Genel 100 TL", "value": 100 }
+    ]
   }
 ]
