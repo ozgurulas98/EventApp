@@ -29,15 +29,25 @@ export default StyleSheet.create({
     fontStyle: "italic",
   },
   map: {
-    paddingTop:20,
-    flex: 0.5,
+    paddingTop: 20,
+    flex: 0.6,
   },
- map_container:{
-  flex: 0.1,
- },
- picker_container:{
-  flex:0.5
- }
-    
-
+  space_container: {
+    flex: 0.1,
+  },
+  dropDownPicker: {
+    width: 200,
+    height: 40,
+  },
+  bottom_container: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  dropDownPicker_container: {
+    flex: 1,
+  },
+  toplam: {
+    flex: 1,
+    alignItems: "center",
+  },
 });

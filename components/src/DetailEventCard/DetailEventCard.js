@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { View, Text } from "react-native";
 import styles from "./DetailEventCard.style";
 import moment from "moment";
@@ -31,14 +31,12 @@ const DetailEventCard = ({ event }) => {
         <Text style={styles.descripTitle}>AÇIKLAMA</Text>
         <Text style={styles.infoTitle}>{event.KisaAciklama}</Text>
       </View>
-      <View style={styles.map_container}>
-         
-      </View>
-       {/* Harita eklemesi */}
-       <MapView
-        style={styles.map} 
+      <View style={styles.space_container}></View>
+      {/* Harita eklemesi */}
+      <MapView
+        style={styles.map}
         initialRegion={{
-          // Başlangıç konumu 
+          // Başlangıç konumu
           latitude: latitude, // Event nesnesinin içindeki latitude kullanılıyor
           longitude: longitude, // Event nesnesinin içindeki longitude kullanılıyor
           latitudeDelta: 0.0922,
@@ -55,16 +53,30 @@ const DetailEventCard = ({ event }) => {
           description={event.EtkinlikMerkezi}
         />
       </MapView>
+      <View style={styles.space_container}></View>
 
-      <DropDownPicker
-        open={open}
-        value={value}
-        items={items}
-        setOpen={setOpen}
-        setValue={setValue}
-        setItems={setItems}
-      />
-     
+
+      <View style={styles.bottom_container}>
+      <View style={styles.dropDownPicker_container}>
+        <DropDownPicker
+          open={open}
+          value={value}
+          items={items}
+          setOpen={setOpen}
+          setValue={setValue}
+          setItems={setItems}
+        />
+        </View>
+
+      <View style={styles.toplam}>
+          
+          <Text>Toplam: </Text>
+        </View>
+      </View>
+      
+      
+        
+      
     </View>
   );
 };
