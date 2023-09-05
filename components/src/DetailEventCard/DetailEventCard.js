@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { View, Text } from "react-native";
 import styles from "./DetailEventCard.style";
 import moment from "moment";
 import MapView, { Marker } from "react-native-maps";
+import DropDownPicker from "react-native-dropdown-picker";
 
 const DetailEventCard = ({ event }) => {
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState(null);
+  const [items, setItems] = useState(event.TicketPriceCategory);
   const startDate = moment(event.EtkinlikBaslamaTarihi).format(
     "ddd, MMM D · HH:mm A"
   );
@@ -32,9 +36,9 @@ const DetailEventCard = ({ event }) => {
       </View>
        {/* Harita eklemesi */}
        <MapView
-        style={styles.map} // Harita stilini ayarlayın
+        style={styles.map} 
         initialRegion={{
-          // Başlangıç konumu (örneğin İzmir'e merkezlenmiş bir başlangıç konumu)
+          // Başlangıç konumu 
           latitude: latitude, // Event nesnesinin içindeki latitude kullanılıyor
           longitude: longitude, // Event nesnesinin içindeki longitude kullanılıyor
           latitudeDelta: 0.0922,
@@ -51,6 +55,15 @@ const DetailEventCard = ({ event }) => {
           description={event.EtkinlikMerkezi}
         />
       </MapView>
+
+      <DropDownPicker
+        open={open}
+        value={value}
+        items={items}
+        setOpen={setOpen}
+        setValue={setValue}
+        setItems={setItems}
+      />
      
     </View>
   );

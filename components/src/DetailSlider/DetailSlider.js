@@ -1,31 +1,26 @@
 // DetailSlider.js
-import React, { useState } from 'react';
-import { View, ScrollView, Dimensions,Image } from 'react-native';
+import React from "react";
+import { View, Dimensions, Image } from "react-native";
+import Swiper from "react-native-swiper";
 
 const DetailSlider = ({ event }) => {
-  const [currentPage, setCurrentPage] = useState(0);
-  const screenWidth = Dimensions.get('window').width;
-
-  const handleScroll = (event) => {
-    const contentOffset = event.nativeEvent.contentOffset.x;
-    const pageIndex = Math.round(contentOffset / screenWidth);
-    setCurrentPage(pageIndex);
-  };
+  const screenWidth = Dimensions.get("window").width;
 
   return (
-    <View>
-      <ScrollView
-        horizontal
-        pagingEnabled
-        onScroll={handleScroll}
-        showsHorizontalScrollIndicator={false}
-      >
-        {event.SliderPhotos.map((slide, index) => (
-          <View key={index} style={{ width: screenWidth, flex: 1, height:260}}>
-            <Image source={{ uri: slide }} style={{width: screenWidth, height: 260, flex:1}} />
+    <View style={{ flex: 1 }}>
+      <Swiper autoplay showsButtons>
+        {event.SliderPhotos.map((photo, index) => (
+          <View
+            key={index}
+            style={{ width: screenWidth, flex: 1, height: 260 }}
+          >
+            <Image
+              source={{ uri: photo }}
+              style={{ width: screenWidth, height: 260, flex: 1 }}
+            />
           </View>
         ))}
-      </ScrollView>
+      </Swiper>
     </View>
   );
 };

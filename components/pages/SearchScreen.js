@@ -52,7 +52,8 @@ const SearchScreen = () => {
       const searchedText = text.toLowerCase();
       const currentTitle = event.Adi.toLowerCase();
 
-      return currentTitle.startsWith(searchedText);
+      return currentTitle.startsWith(searchedText) && moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment());
+
     });
     setfilteredlist(textFilteredList);
   };
