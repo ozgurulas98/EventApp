@@ -56,14 +56,15 @@ const SearchScreen = () => {
       setfilteredlist(pastEvents); // Geçmiş etkinlikleri listeye ekle
     } else {
       // Geçmiş etkinlikleri gizliyorsak, filtrelenmemiş listeyi kullan
+      
       setfilteredlist(list);
     }
   };
 
   const handleVenuePress = (venueName) => {
     const vanueFilteredlist = event_data.filter(
-      (event) =>
-        event.Mekan === venueName &&
+      (event) => 
+        event.Mekan === venueName && 
         moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
     );
     setfilteredlist(vanueFilteredlist);
@@ -73,11 +74,10 @@ const SearchScreen = () => {
     const textFilteredList = event_data.filter((event) => {
       const searchedText = text.toLowerCase();
       const currentTitle = event.Adi.toLowerCase();
-
-      return (
-        currentTitle.startsWith(searchedText) &&
-        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
-      );
+      const isFutureEvent = moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment());
+      const isPastEvent = moment(event.EtkinlikBitisTarihi).isBefore(moment());
+  
+      return currentTitle.startsWith(searchedText) && (showPastEvents ? isPastEvent : isFutureEvent);
     });
     setfilteredlist(textFilteredList);
   };
@@ -95,7 +95,6 @@ const SearchScreen = () => {
         <Text
           style={{
             color: showPastEvents ? "#ffffff" : "black",
-        
           }}
         >
           Geçmiş Etkinlikler
@@ -120,14 +119,13 @@ const styles = StyleSheet.create({
   showPastEventsButton: {
     backgroundColor: "#e5e5e5",
     padding: 10,
-    borderRadius:10,
-    width:140
-
+    borderRadius: 10,
+    width: 140,
   },
   showPastEventsActiveButton: {
     backgroundColor: "#0dcdaa",
-    borderRadius:10,
-    width:140
+    borderRadius: 10,
+    width: 140,
   },
 });
 
