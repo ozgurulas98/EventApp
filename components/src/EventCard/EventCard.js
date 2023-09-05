@@ -92,11 +92,13 @@ const EventCard = ({ event, onVenuePress }) => {
             color="#7c7c7c"
             style={styles.mapo_icon}
           />
-        
+
           <TouchableOpacity onPress={() => onVenuePress(event.Mekan)}>
             <Text style={styles.placeText}>{event.Mekan}</Text>
           </TouchableOpacity>
-          <Text style={styles.isfree}>{event.UcretsizMi ? "ÜCRETSİZ" : ""}</Text>
+          <Text style={styles.isfree}>
+            {event.UcretsizMi ? "ÜCRETSİZ" : ""}
+          </Text>
         </View>
       </View>
     </View>
