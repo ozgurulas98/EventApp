@@ -15,7 +15,6 @@ import moment from "moment";
 import DatePicker, { getFormatedDate } from "react-native-modern-datepicker";
 
 const HomeScreen = () => {
-  const [list, setlist] = useState(event_data);
   const [filteredlist, setfilteredlist] = useState(event_data);
   const [open, setOpen] = useState(false);
   const [date, setDate] = useState("2023/02/08");
@@ -33,9 +32,35 @@ const HomeScreen = () => {
     setOpen(!open);
   };
 
-  const handleChange = (propDate) => { {/*bu isimlendirme yanlış olabilir */}
+  const handleStartDateChange = (propDate) => {
     console.log(propDate);
+
     setDate(propDate);
+
+    const filteredEvents = event_data.filter(
+      (event) =>
+        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(
+          moment(date, "YYYY/MM/DD")
+        ) &&
+        moment(event.EtkinlikBaslamaTarihi).isSameOrBefore(
+          moment(endDate, "YYYY/MM/DD")
+        )
+    );
+    setfilteredlist(filteredEvents);
+  };
+
+  const handleEndDateChange = (propDate) => {
+    setEndDate(propDate);
+    const filteredEvents = event_data.filter(
+      (event) =>
+        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(
+          moment(date, "YYYY/MM/DD")
+        ) &&
+        moment(event.EtkinlikBaslamaTarihi).isSameOrBefore(
+          moment(endDate, "YYYY/MM/DD")
+        )
+    );
+    setfilteredlist(filteredEvents);
   };
 
   useEffect(() => {
@@ -68,14 +93,14 @@ const HomeScreen = () => {
               mode="calendar"
               minimumDate={startDate}
               selected={date}
-              onDateChange={handleChange}
+              onDateChange={handleStartDateChange}
             />
 
             <DatePicker
               mode="calendar"
               minimumDate={date}
               selected={endDate}
-              onDateChange={handleChange}
+              onDateChange={handleEndDateChange}
             />
 
             <TouchableOpacity onPress={handleOnPress}>
