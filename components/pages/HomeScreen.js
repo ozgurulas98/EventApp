@@ -19,6 +19,7 @@ const HomeScreen = () => {
   const [filteredlist, setfilteredlist] = useState(event_data);
   const [open, setOpen] = useState(false);
   const [date, setDate] = useState("2023/02/08");
+  const [endDate, setEndDate] = useState("2023/02/08");
 
   const today = new Date();
   const startDate = getFormatedDate(
@@ -32,7 +33,7 @@ const HomeScreen = () => {
     setOpen(!open);
   };
 
-  const handleChange = (propDate) => {
+  const handleChange = (propDate) => { {/*bu isimlendirme yanlış olabilir */}
     console.log(propDate);
     setDate(propDate);
   };
@@ -51,9 +52,13 @@ const HomeScreen = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={handleOnPress} style={{ borderRadius: 5,
-    width: 60,alignItems: "center"}}>
-        <Text style={{fontSize:20, textDecorationLine:"underline"}}>Date</Text>
+      <TouchableOpacity
+        onPress={handleOnPress}
+        style={{ borderRadius: 5, width: 60, alignItems: "center" }}
+      >
+        <Text style={{ fontSize: 17, textDecorationLine: "underline" }}>
+          Date
+        </Text>
       </TouchableOpacity>
 
       <Modal animationType="slide" transparent={true} visible={open}>
@@ -63,6 +68,13 @@ const HomeScreen = () => {
               mode="calendar"
               minimumDate={startDate}
               selected={date}
+              onDateChange={handleChange}
+            />
+
+            <DatePicker
+              mode="calendar"
+              minimumDate={date}
+              selected={endDate}
               onDateChange={handleChange}
             />
 
@@ -103,6 +115,5 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
     elevation: 5,
   },
-  
 });
 export default HomeScreen;
