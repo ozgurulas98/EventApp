@@ -28,9 +28,12 @@ export default StyleSheet.create({
     fontSize: 15,
     fontStyle: "italic",
   },
+  location_container:{
+flex:1
+  },
   map: {
     paddingTop: 20,
-    flex: 0.6,
+    flex: 0.4,
   },
   space_container: {
     flex: 0.1,
@@ -50,4 +53,7 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: "center",
   },
+  space_container_last:{
+    flex:0.05
+  }
 });

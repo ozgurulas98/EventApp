@@ -62,11 +62,20 @@ const SearchScreen = () => {
   };
 
   const handleVenuePress = (venueName) => {
-    const vanueFilteredlist = event_data.filter(
-      (event) => 
-        event.Mekan === venueName && 
-        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
-    );
+    let vanueFilteredlist;
+    
+    if (showPastEvents) {
+      // Eğer "Geçmiş Etkinlikler" gösteriliyorsa, tüm etkinlikleri mekan adına göre filtrele
+      vanueFilteredlist = event_data.filter((event) => event.Mekan === venueName);
+    } else {
+      // "Geçmiş Etkinlikler" gösterilmiyorsa, sadece gelecekteki etkinlikleri mekan adına göre filtrele
+      vanueFilteredlist = event_data.filter(
+        (event) =>
+          event.Mekan === venueName &&
+          moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(moment())
+      );
+    }
+  
     setfilteredlist(vanueFilteredlist);
   };
 

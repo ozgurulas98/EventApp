@@ -33,6 +33,10 @@ const DetailEventCard = ({ event }) => {
       </View>
       <View style={styles.space_container}></View>
       {/* Harita eklemesi */}
+      <Text style={styles.location}>{event.Lokasyon}</Text>
+      <View style={styles.space_container_last}></View>
+      <Text style={styles.placeText}>{event.Mekan}</Text>
+      <View style={styles.space_container_last}></View>
       <MapView
         style={styles.map}
         initialRegion={{
