@@ -3,10 +3,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { FontAwesome } from "@expo/vector-icons";
-import SearchScreen from "../pages/SearchScreen";
-import HomeScreen from "../pages/HomeScreen";
-import EventDetailScreen from "../pages/EventDetailScreen";
-import FilterScreen from "../pages/FilterScreen";
+import SearchScreen from "./components/pages/SearchScreen";
+import HomeScreen from "./components/pages/HomeScreen";
+import EventDetailScreen from "./components/pages/EventDetailScreen";
+import FilterScreen from "./components/pages/FilterScreen";
+import { EventProvider } from "./EventContext";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -39,28 +40,30 @@ const MainScreen = () => {
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="MainScreen">
-        <Stack.Screen
-          name="MainScreen"
-          component={MainScreen}
-          options={{ headerShown: false }}
-        ></Stack.Screen>
-        <Stack.Screen
-          name="EventDetail"
-          component={EventDetailScreen}
-          options={{ headerTitle: "Etkinlik Detayları" }}
-        />
-        <Stack.Screen
-          name="FilterScreen"
-          component={FilterScreen}
-          options={{
-            headerTitle: "Filter",
-            headerTitleStyle: { fontSize: 18 },
-          }}
-        ></Stack.Screen>
-      </Stack.Navigator>
-    </NavigationContainer>
+    <EventProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="MainScreen">
+          <Stack.Screen
+            name="MainScreen"
+            component={MainScreen}
+            options={{ headerShown: false }}
+          ></Stack.Screen>
+          <Stack.Screen
+            name="EventDetail"
+            component={EventDetailScreen}
+            options={{ headerTitle: "Etkinlik Detayları" }}
+          />
+          <Stack.Screen
+            name="FilterScreen"
+            component={FilterScreen}
+            options={{
+              headerTitle: "Filtre",
+              headerTitleStyle: { fontSize: 18 },
+            }}
+          ></Stack.Screen>
+        </Stack.Navigator>
+      </NavigationContainer>
+    </EventProvider>
   );
 };
 

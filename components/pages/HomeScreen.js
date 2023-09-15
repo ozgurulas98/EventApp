@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   StyleSheet,
@@ -7,72 +7,50 @@ import {
   Text,
   Modal,
 } from "react-native";
-import { useState, useEffect } from "react";
 import Slider from "../src/SliderCard/Slider";
 import EventCard from "../src/EventCard/EventCard";
 import event_data from "../event_data.json";
 import moment from "moment";
-import DatePicker, { getFormatedDate } from "react-native-modern-datepicker";
+import DatePicker from "react-native-modern-datepicker";
 
 const HomeScreen = () => {
-  const [filteredlist, setfilteredlist] = useState(event_data);
+  const [filteredlist, setFilteredlist] = useState(event_data);
   const [open, setOpen] = useState(false);
-  const [date, setDate] = useState("2023/02/08");
-  const [endDate, setEndDate] = useState("2023/02/08");
+  const [startDate, setStartDate] = useState(moment().format("YYYY/MM/DD"));
+  const [endDate, setEndDate] = useState(null);
 
-  const today = new Date();
-  const startDate = getFormatedDate(
-    today.setDate(today.getDate() + 1),
-    "YYYY/MM/DD"
-  );
-
-  const renderEvent = ({ item }) => <EventCard event={item} />;
+  const renderEvent = ({ item }) => <EventCard event={item} onVenuePress={() => { }} />;
 
   const handleOnPress = () => {
     setOpen(!open);
   };
 
   const handleStartDateChange = (propDate) => {
-    console.log(propDate);
-
-    setDate(propDate);
-
-    const filteredEvents = event_data.filter(
-      (event) =>
-        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(
-          moment(date, "YYYY/MM/DD")
-        ) &&
-        moment(event.EtkinlikBaslamaTarihi).isSameOrBefore(
-          moment(endDate, "YYYY/MM/DD")
-        )
-    );
-    setfilteredlist(filteredEvents);
+    setStartDate(propDate);
+    filterEventsByDateRange(moment(propDate, "YYYY/MM/DD"), moment(endDate, "YYYY/MM/DD"));
   };
 
   const handleEndDateChange = (propDate) => {
     setEndDate(propDate);
-    const filteredEvents = event_data.filter(
-      (event) =>
-        moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(
-          moment(date, "YYYY/MM/DD")
-        ) &&
-        moment(event.EtkinlikBaslamaTarihi).isSameOrBefore(
-          moment(endDate, "YYYY/MM/DD")
-        )
-    );
-    setfilteredlist(filteredEvents);
+    filterEventsByDateRange(moment(startDate, "YYYY/MM/DD"), moment(propDate, "YYYY/MM/DD"));
+  };
+
+  const filterEventsByDateRange = (startDate, endDate) => {
+    const filteredEvents = event_data.filter((event) => {
+      const eventDate = moment(event.EtkinlikBaslamaTarihi, "YYYY/MM/DD");
+      return eventDate.isSameOrAfter(startDate) && eventDate.isSameOrBefore(endDate);
+    });
+    setFilteredlist(filteredEvents);
   };
 
   useEffect(() => {
     // Şu anki tarih ve saat
     const currentDate = moment();
-
     // Etkinlikleri güncel tarih ve saate göre filtrele
     const filteredEvents = event_data.filter((event) =>
-      moment(event.EtkinlikBaslamaTarihi).isSameOrAfter(currentDate)
+      moment(event.EtkinlikBitisTarihi, "YYYY/MM/DD").isSameOrAfter(currentDate)
     );
-
-    setfilteredlist(filteredEvents);
+    setFilteredlist(filteredEvents);
   }, []);
 
   return (
@@ -91,14 +69,14 @@ const HomeScreen = () => {
           <View style={styles.modalView}>
             <DatePicker
               mode="calendar"
-              minimumDate={startDate}
-              selected={date}
+              minimumDate={moment().format("YYYY/MM/DD")}
+              selected={startDate}
               onDateChange={handleStartDateChange}
             />
 
             <DatePicker
               mode="calendar"
-              minimumDate={date}
+              minimumDate={startDate}
               selected={endDate}
               onDateChange={handleEndDateChange}
             />
@@ -118,6 +96,7 @@ const HomeScreen = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     paddingTop: 50,
@@ -141,4 +120,5 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
 });
+
 export default HomeScreen;
