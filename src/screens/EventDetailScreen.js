@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import Swiper from "react-native-swiper";
-import DetailEventCard from "../src/DetailEventCard/DetailEventCard";
-import DetailSlider from "../src/DetailSlider/DetailSlider";
+import DetailEventCard from "../components/DetailEventCard/DetailEventCard";
+import DetailSlider from "../components/DetailSlider/DetailSlider";
 
 const EventDetailScreen = ({ route }) => {
   const { event } = route.params;

@@ -1,36 +1,48 @@
-import React from 'react';
-import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
-import Checkbox from 'expo-checkbox';
-import { useEventContext } from '../../EventContext';
-import { useNavigation } from '@react-navigation/native';
+import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
+import Checkbox from "expo-checkbox";
+import { useEventContext } from "../../EventContext";
+import { useNavigation } from "@react-navigation/native";
 
-import events from '../event_data.json'
+import events from "../event_data.json";
 
-var sehirler = events.map(function (etkinlik) {
-  return etkinlik.Lokasyon ? etkinlik.Lokasyon : null;
-}).filter(function (sehir) {
-  return sehir !== null;
-});
+var sehirler = events
+  .map(function (etkinlik) {
+    return etkinlik.Lokasyon ? etkinlik.Lokasyon : null;
+  })
+  .filter(function (sehir) {
+    return sehir !== null;
+  });
 
-// Tekrar eden şehirleri kaldır
+  // Tekrar eden şehirleri kaldır
 var cities = Array.from(new Set(sehirler));
 
-var mekanlar = events.map(function (etkinlik) {
-  return etkinlik.Mekan ? etkinlik.Mekan : null;
-}).filter(function (mekan) {
-  return mekan !== null;
-});
+var mekanlar = events
+  .map(function (etkinlik) {
+    return etkinlik.Mekan ? etkinlik.Mekan : null;
+  })
+  .filter(function (mekan) {
+    return mekan !== null;
+  });
 
-// Tekrar eden şehirleri kaldır
+  // Tekrar eden mekanları kaldır
 var places = Array.from(new Set(mekanlar));
 
-var turler = events.map(function (etkinlik) {
-  return etkinlik.Tur ? etkinlik.Tur : null;
-}).filter(function (tur) {
-  return tur !== null;
-});
+var turler = events
+  .map(function (etkinlik) {
+    return etkinlik.Tur ? etkinlik.Tur : null;
+  })
+  .filter(function (tur) {
+    return tur !== null;
+  });
 
-// Tekrar eden şehirleri kaldır
+// Tekrar eden turleri kaldır
 var genres = Array.from(new Set(turler));
 
 const FilterScreen = () => {
@@ -105,15 +117,15 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 16,
   },
   scrollView: {
     flex: 1,
   },
   cityItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginBottom: 12,
   },
   checkbox: {
@@ -123,14 +135,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   submitButton: {
-    backgroundColor: '#4630EB',
+    backgroundColor: "#4630EB",
     padding: 16,
     borderRadius: 8,
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 16,
   },
   submitButtonText: {
-    color: 'white',
+    color: "white",
     fontSize: 18,
   },
 });

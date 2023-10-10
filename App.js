@@ -3,10 +3,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { FontAwesome } from "@expo/vector-icons";
-import SearchScreen from "./components/pages/SearchScreen";
-import HomeScreen from "./components/pages/HomeScreen";
-import EventDetailScreen from "./components/pages/EventDetailScreen";
-import FilterScreen from "./components/pages/FilterScreen";
+import SearchScreen from "./src/screens/SearchScreen";
+import HomeScreen from "./src/screens/HomeScreen";
+import EventDetailScreen from "./src/screens/EventDetailScreen";
+import FilterScreen from "./src/screens/FilterScreen";
 import { EventProvider } from "./EventContext";
 
 const Tab = createBottomTabNavigator();

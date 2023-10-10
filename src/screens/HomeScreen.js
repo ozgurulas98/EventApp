@@ -7,8 +7,8 @@ import {
   Text,
   Modal,
 } from "react-native";
-import Slider from "../src/SliderCard/Slider";
-import EventCard from "../src/EventCard/EventCard";
+import Slider from "../components/SliderCard/Slider";
+import EventCard from "../components/EventCard/EventCard";
 import event_data from "../event_data.json";
 import moment from "moment";
 import DatePicker from "react-native-modern-datepicker";

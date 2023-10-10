@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import eventData from './components/event_data.json';
+import eventData from './src/event_data.json';
 import moment from 'moment';
 
 const EventContext = createContext();

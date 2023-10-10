@@ -43,7 +43,7 @@ const EventCard = ({ event, onVenuePress }) => {
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={handleEventPress}>
-        <Image style={styles.image} source={imageSource} />
+        <Image style={styles.image} source={imageSource}/>
       </TouchableOpacity>
 
       <View style={styles.inner_container}>

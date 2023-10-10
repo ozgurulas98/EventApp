@@ -7,10 +7,9 @@ import {
   TouchableOpacity,
   Text,
 } from "react-native";
-import SearchBar from "../src/SearchBar/SearchBar";
-import EventCard from "../src/EventCard/EventCard";
+import SearchBar from "../components/SearchBar/SearchBar";
+import EventCard from "../components/EventCard/EventCard";
 import { useEventContext } from "../../EventContext";
-import { useFocusEffect } from "@react-navigation/native";
 
 const SearchScreen = ({ navigation }) => {
   const { filteredEvents, toggleShowPastEvents, showPastEvents, handleSearch, filterForPlaces, removeFilter } = useEventContext();
@@ -18,14 +17,6 @@ const SearchScreen = ({ navigation }) => {
   const renderEvent = ({ item }) => (
     <EventCard event={item} onVenuePress={handleVenuePress} />
   );
-
-
-  // useFocusEffect(
-  //   React.useCallback(() => {
-  //     filterForPlaces("");
-  //   }, [])
-  // )
-
 
   const handleVenuePress = (venueName) => {
     filterForPlaces(venueName);

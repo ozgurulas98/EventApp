@@ -55,7 +55,7 @@ const Slider = () => {
           <Image
             style={styles.banner_image}
             source={{ uri: slides[currentSlideIndex].image }}
-            resizeMode="cover"
+            resizeMode="contain"
           />
         </View>
         <View style={styles.bottom_container}>
